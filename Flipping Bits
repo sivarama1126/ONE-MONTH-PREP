@@ -1,0 +1,6 @@
+public static long flippingBits(long n) {
+        long h=(long)Math.pow(2,32);
+        long j=h-n-1;
+        return j;
+   
+    }
