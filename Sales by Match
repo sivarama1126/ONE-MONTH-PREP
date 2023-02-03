@@ -1,0 +1,18 @@
+public static int sockMerchant(int n, List<Integer> ar) {
+        int a=0;
+        Map<Integer,Integer> mp = new HashMap<>();
+        for(int i:ar)
+        {
+            if(mp.containsKey(i)){
+                mp.put(i, mp.get(i)+1);
+            }
+            else{
+                mp.put(i,1);
+            }
+        }
+        for(int i:mp.keySet())
+        {
+            a=a+mp.get(i)/2;
+        }
+        return a;
+ }
