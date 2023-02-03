@@ -1,0 +1,12 @@
+public static List<Integer> countingSort(List<Integer> arr) {
+        List<Integer> lis = new ArrayList<>();
+        for(int i=0;i<100;i++){
+            lis.add(0);
+        }
+        for(Integer j:arr){
+            lis.set(j,lis.get(j)+1);
+        }
+        return lis;
+    }
+
+}
